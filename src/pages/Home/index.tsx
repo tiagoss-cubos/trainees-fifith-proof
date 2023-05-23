@@ -6,9 +6,24 @@ import { OrderForm } from "../../types/order-form";
 import { Context } from "../../context/Context";
 import Card from "../../components/CardProduct";
 import OrderResume from "../../components/OrderResume";
+import styled, { StyledComponent } from "styled-components";
 import "./styles.css";
 
+const Loading: StyledComponent<unknown> = styled.p`
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #2e44a1;
+  margin-top: 2rem;
+  text-align: center;
+`;
+
+const Error: tyledComponent<unknown> = styled(Loading)`
+  color: rgb(255, 0, 0);
+`;
+
 const Home = () => {
+  const { orderForm, setOrderForm } = useContext(Context);
   const { loading, error, data } = useQuery<OrderForm>(ORDER_FORM, {
     variables: {
       input: {
@@ -16,11 +31,22 @@ const Home = () => {
       },
     },
   });
-  const { orderForm, setOrderForm } = useContext(Context);
 
-  if (loading) return <h3>Carregango informações da loja</h3>;
+  if (loading) {
+    return (
+      <>
+        <Loading>Carregango informações da loja</Loading>
+      </>
+    );
+  }
 
-  if (error) return `Error! ${error.message}`;
+  if (error) {
+    return (
+      <>
+        <Error>`Error! ${error.message}`</Error>
+      </>
+    );
+  }
 
   if (data) setOrderForm(data?.orderForm?.items);
 

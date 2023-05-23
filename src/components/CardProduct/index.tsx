@@ -15,8 +15,6 @@ const BoxProduct = styled.div`
 `;
 
 const ProductName = styled.p`
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -32,8 +30,6 @@ const BoxPrice = styled.div`
 `;
 
 const ListPrice = styled.span`
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -47,12 +43,25 @@ const Price = styled(ListPrice)`
 `;
 
 const TitleBoxProduct = styled.p`
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #555555;
+`;
+
+const FlagDisconunt = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #ffffff;
+  width: 3rem;
+  height: 1.25rem;
+  background: #eb0045;
+  border-radius: 31.25rem;
+  margin-top: 0.625rem;
 `;
 
 const Card = ({ product }: any) => {
@@ -66,6 +75,7 @@ const Card = ({ product }: any) => {
         <TitleBoxProduct>Valor unitário</TitleBoxProduct>
         <ListPrice>{listPrice}</ListPrice>
         <Price>{price}</Price>
+        <FlagDisconunt>-30%</FlagDisconunt>
       </BoxPrice>
     </BoxProduct>
   );

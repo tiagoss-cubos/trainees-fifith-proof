@@ -24,8 +24,6 @@ const Box = styled.div`
 `;
 
 const Title = styled.span`
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;

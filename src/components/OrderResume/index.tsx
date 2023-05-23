@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import BuyButton from "../BuyButton";
 
 const BoxOrderResume = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: rgba(255, 255, 255, 0.5);
   height: 6rem;
@@ -10,8 +11,6 @@ const BoxOrderResume = styled.div`
 `;
 
 const TitleResume = styled.span`
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -22,6 +21,7 @@ const OrderResume = () => {
   return (
     <BoxOrderResume>
       <TitleResume>Resumo do pedido</TitleResume>
+      <BuyButton />
     </BoxOrderResume>
   );
 };

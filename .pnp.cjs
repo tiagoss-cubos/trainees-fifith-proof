@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:5.13.2"],\
             ["@types/react", "npm:18.2.6"],\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/styled-components", "npm:5.1.26"],\
             ["@typescript-eslint/eslint-plugin", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:5.59.7"],\
             ["@typescript-eslint/parser", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:5.59.7"],\
             ["@vitejs/plugin-react", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:4.0.0"],\
@@ -3474,6 +3475,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/hoist-non-react-statics", [\
+        ["npm:3.3.1", {\
+          "packageLocation": "./.yarn/cache/@types-hoist-non-react-statics-npm-3.3.1-c0081332b2-2c0778570d.zip/node_modules/@types/hoist-non-react-statics/",\
+          "packageDependencies": [\
+            ["@types/hoist-non-react-statics", "npm:3.3.1"],\
+            ["@types/react", "npm:18.2.6"],\
+            ["hoist-non-react-statics", "npm:3.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/json-schema", [\
         ["npm:7.0.11", {\
           "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.11-79462ae5ca-527bddfe62.zip/node_modules/@types/json-schema/",\
@@ -3557,6 +3569,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-semver-npm-7.5.0-4823ff34be-0a64b9b9c7.zip/node_modules/@types/semver/",\
           "packageDependencies": [\
             ["@types/semver", "npm:7.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/styled-components", [\
+        ["npm:5.1.26", {\
+          "packageLocation": "./.yarn/cache/@types-styled-components-npm-5.1.26-aabda06611-84f53b3101.zip/node_modules/@types/styled-components/",\
+          "packageDependencies": [\
+            ["@types/styled-components", "npm:5.1.26"],\
+            ["@types/hoist-non-react-statics", "npm:3.3.1"],\
+            ["@types/react", "npm:18.2.6"],\
+            ["csstype", "npm:3.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4830,6 +4854,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:5.13.2"],\
             ["@types/react", "npm:18.2.6"],\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/styled-components", "npm:5.1.26"],\
             ["@typescript-eslint/eslint-plugin", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:5.59.7"],\
             ["@typescript-eslint/parser", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:5.59.7"],\
             ["@vitejs/plugin-react", "virtual:9fa146ddd9682b96dc480ba84736743bfa8aa4fa18c0f32f2da66c1e28e4e2bb28e4729d2eed391e77ba0ed0668353f488c7e91d318b2bd1e4ba735520aab3a8#npm:4.0.0"],\
